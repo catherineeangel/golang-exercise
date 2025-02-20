@@ -1,5 +1,9 @@
 package logic01
 
+import (
+	"fmt"
+)
+
 // Soal 1
 func OddPattern(slice *[]int) {
 	for i:= range *slice {
@@ -69,6 +73,25 @@ func RepeatTriplePattern (slice *[]int){
 
 		}
 	}
+}
+
+// Soal 11
+func BuzzPattern(n int) {
+	initVal := 3
+	for i := range n {
+		if (i % 2 == 0){
+			fmt.Print("Buzz", "\t")
+		} else {
+			switch i {
+			case 1:
+				fmt.Print(1, "\t")
+			default: 
+				fmt.Print(initVal, "\t")
+				initVal+=3
+
+			}
+		}
+	}	
 }
 
 // Soal 12

@@ -33,7 +33,11 @@ func Sample01 () {
 	RepeatTriplePattern(&array)
 	slice.Print1DSlice(array)
 
-	
+	fmt.Println("Buzz Pattern")
+	BuzzPattern(7)
+
+	fmt.Println()
+
 }
 
 func generateSlice(n int) []int {
